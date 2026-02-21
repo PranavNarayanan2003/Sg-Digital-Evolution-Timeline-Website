@@ -1,0 +1,137 @@
+[
+    {
+        "id": "1997",
+        "year": "1997",
+        "title": "Launch of Singapore ONE",
+        "description": "Singapore introduced the pilot for Singapore ONE, a groundbreaking program to establish nationwide broadband access. The launch, officiated by Prime Minister Goh Chok Tong, established Singapore as one of the world's pioneers in implementing such a network. After a successful trial period, the service was rolled out commercially in 1998. This forward-thinking project established the foundation for the nation's digital future, paving the way for ADSL, cable, and fibre technologies and cementing Singapore's role as a global leader in digital infrastructure.",
+        "expandable_video": {
+            "title": "The Vision of Singapore ONE.",
+            "url": "https://www.youtube.com/embed/oQkut7S6PpI?start=496&end=614"
+        }
+    },
+    {
+        "id": "1999",
+        "year": "1999",
+        "title": "Formation of the Infocomm Development Authority (IDA)",
+        "description": "The formation of the Infocomm Development Authority (IDA) resulted from the merger of the Telecommunication Authority of Singapore (TAS) and the National Computer Board (NCB). This new statutory body was given the mandate to guide Singapore’s adoption of information and communications technology into the new millennium.",
+        "image": "IDA_logo.png"
+    },
+    {
+        "id": "2001",
+        "year": "2000-2001",
+        "title": "ADSL and Cable Broadband Rollout",
+        "description": "The age of dial-up connectivity concluded as Singtel introduced its Magix ADSL services, while StarHub offered a competing cable broadband service through its Singapore Cable Vision (SCV) network. This market competition led to a rapid increase in broadband adoption, with over 300,000 households connected by the end of 2001. This signified a fundamental shift toward an always-on internet culture.",
+        "expandable_image": {
+            "src": "broadbandtrend.png",
+            "alt": "Details about Household access to internet",
+            "caption": "The growth from 45% in 2004 surging to 82% by 2010."
+        }
+    },
+    {
+        "id": "2003",
+        "year": "2003",
+        "title": "Introduction of Singpass",
+        "description": "The introduction of Singpass (Singapore Personal Access) established a universal digital identity for citizens to access government e-services, creating a core component of a digital-first public sector. Now managed by GovTech, the platform receives continuous security upgrades to safeguard user data. The Singpass app, launched in 2018 for greater convenience, now helps facilitate over 41 million monthly transactions between users and hundreds of public and private sector entities.",
+        "image": "singpass.png",
+        "expandable_video": {
+            "title": "Empowering users everyday.",
+            "url": "https://www.youtube.com/embed/rUZf1ZcB0NY"
+        }
+    },
+    {
+        "id": "2005",
+        "year": "2005",
+        "title": "M1 Launches First Commercial 3G Services",
+        "description": "The launch of the first 3G network by M1 marked the beginning of the mobile internet era in Singapore. For the first time, residents could reliably make video calls, stream videos, and download multimedia content directly to their phones.",
+        "image": "M1.png"
+    },
+    {
+        "id": "2006",
+        "year": "2006",
+        "title": "Wireless@SG Pilot",
+        "expandable_slideshow": {
+            "slides": [
+                {
+                    "image": "wirelesssg.jpeg",
+                    "title": "Wireless@SG Pilot (2006)",
+                    "description": "As part of the iN2015 Masterplan, the Infocomm Development Authority (IDA) launched the Wireless@SG program to provide free, public Wi-Fi access. The initial pilot aimed to enhance internet accessibility and promote a connected lifestyle beyond homes and offices."
+                },
+                {
+                    "image": "People.png",
+                    "alt": "People in a public space using their phones",
+                    "title": "The Vision for a Connected Lifestyle",
+                    "description": "The program was created to meet a growing public demand for mobile data and seamless internet access in public spaces, fostering a truly connected lifestyle for all as part of Singapore's iN2015 masterplan."
+                },
+                {
+                    "image": "Public.png",
+                    "alt": "FREE WIFI@MRT sticker at a train station",
+                    "title": "Expanding to High-Traffic Hubs (2015-2018)",
+                    "description": "A key phase of the program involved a massive expansion of coverage into public spaces with high footfall, including MRT stations, bus interchanges, and hawker centres, aiming to double the number of hotspots to 20,000 by 2018."
+                },
+                {
+                    "image": "App.png",
+                    "alt": "The old IDA Wireless@SG app interface",
+                    "title": "Enhancing the User Experience (Mid-2010s)",
+                    "description": "To make access easier across the growing network, tools like the Wireless@SG app were introduced to help users locate hotspots and configure their devices, while login processes were simplified and speeds were continually upgraded."
+                },
+                {
+                    "image": "topology.png",
+                    "alt": "The federated network diagram",
+                    "title": "A Seamless Federated Network (Today)",
+                    "description": "The program has evolved into a sophisticated federated network managed by four service providers (M1, Singtel, StarHub, and SIMBA), allowing users to roam seamlessly across tens of thousands of hotspots with speeds of 5Mbps and beyond."
+                }
+            ]
+        }
+    },
+    {
+        "id": "2007",
+        "year": "2007",
+        "title": "Smartphones Become Mainstream",
+        "expandable_slideshow": {
+            "slides": [
+                {
+                    "image": "iphone_2007.png",
+                    "alt": "Original iPhone from 2007",
+                    "title": "The iPhone Revolution (2007)",
+                    "description": "Apple's iPhone launched globally, introducing the first truly intuitive touchscreen smartphone. In Singapore, early adopters queued at Singtel stores as the device revolutionized mobile internet usage. The iPhone's Safari browser and visual voicemail changed how Singaporeans accessed information on-the-go."
+                },
+                {
+                    "image": "blackberry_curve.png",
+                    "alt": "BlackBerry Curve smartphone",
+                    "title": "BlackBerry's Business Dominance (2008-2010)",
+                    "description": "BlackBerry devices became the standard for Singapore's business professionals and government workers. The secure email system and physical QWERTY keyboard made it ideal for Singapore's growing financial sector and government e-services adoption."
+                },
+                {
+                    "image": "android_g1.png",
+                    "alt": "HTC Dream (T-Mobile G1) - first Android phone",
+                    "title": "Android Enters the Market (2008-2009)",
+                    "description": "Google's Android platform launched with the HTC Dream, offering an open alternative to iOS. In Singapore, Android's integration with Google services and customization options appealed to tech-savvy users, setting the stage for the smartphone wars."
+                },
+                {
+                    "image": "samsung_galaxy_s.png",
+                    "alt": "Samsung Galaxy S smartphone",
+                    "title": "Samsung's Android Challenge (2010-2012)",
+                    "description": "Samsung's Galaxy S series brought large, vibrant displays and powerful Android experiences to Singapore. The larger screens were perfect for watching videos and using apps, accelerating mobile data consumption across the island."
+                },
+                {
+                    "image": "iphone_4s.png",
+                    "alt": "iPhone 4S with Siri",
+                    "title": "Siri and the Smart Assistant Era (2011-2013)",
+                    "description": "The iPhone 4S introduced Siri to Singapore, marking the beginning of voice-controlled smart assistants. Singaporeans began using voice commands for navigation, messaging, and searching, foreshadowing the AI integration in today's Smart Nation initiatives."
+                },
+                {
+                    "image": "smartphone_variety_2015.png",
+                    "alt": "Collection of various smartphones from 2015",
+                    "title": "The Mature Smartphone Ecosystem (2014-2016)",
+                    "description": "By 2015, Singapore had one of the world's highest smartphone penetration rates at over 85%. The variety of devices from Apple, Samsung, LG, and Chinese manufacturers gave Singaporeans unprecedented choice, driving innovation in mobile apps and services."
+                },
+                {
+                    "image": "foldable_phones_2020.png",
+                    "alt": "Modern foldable smartphones",
+                    "title": "The Future: Foldables and 5G (2020-Present)",
+                    "description": "Today's smartphones in Singapore feature foldable displays, 5G connectivity, and AI capabilities. These devices serve as gateways to Smart Nation services, digital payments through PayNow, and seamless integration with IoT infrastructure across the city-state."
+                }
+            ]
+        }
+    }
+]

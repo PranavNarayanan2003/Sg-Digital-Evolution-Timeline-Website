@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "Which program, launched as a pilot in 1997, was a pioneering project for nationwide broadband access in Singapore?",
+            "options": [
+                "Singpass",
+                "Wireless@SG",
+                "Singapore ONE",
+                "Smart Nation"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "What digital identity platform was introduced in 2003 for citizens to access government e-services?",
+            "options": [
+                "CorpPass",
+                "Singpass",
+                "MyInfo",
+                "GovTech"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "The 'Smart Nation' vision was officially launched in which year?",
+            "options": [
+                "2010",
+                "2014",
+                "2018",
+                "2020"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "What was the primary technology used by the TraceTogether system for digital contact tracing during the COVID-19 pandemic?",
+            "options": [
+                "GPS",
+                "NFC",
+                "Wi-Fi",
+                "Bluetooth"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Which new branch was added to the Singapore Armed Forces in 2022 to handle digital threats?",
+            "options": [
+                "Cyber Security Agency (CSA)",
+                "Digital and Intelligence Service (DIS)",
+                "GovTech",
+                "Infocomm Media Development Authority (IMDA)"
+            ],
+            "answer": 1
+        }
+    ]
+}

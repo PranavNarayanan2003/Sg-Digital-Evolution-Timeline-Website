@@ -1,0 +1,203 @@
+[
+    {
+        "id": "digital-divide",
+        "year": "2010s",
+        "title": "Bridging the Digital Divide",
+        "description": "As internet usage became widespread, the government prioritized digital inclusivity to ensure all citizens, especially seniors, could benefit from technology. Initiatives like the Silver Infocomm Initiative, which started in 2007, were significantly expanded to provide affordable IT training for senior citizens.",
+        "digital_divide_chart": {
+            "title": "Internet Adoption: Seniors vs. Youth",
+            "data": {
+                "2010": {
+                    "labels": [
+                        "Seniors (50+)",
+                        "Youth (15-24)"
+                    ],
+                    "values": [
+                        38,
+                        90
+                    ]
+                },
+                "2020": {
+                    "labels": [
+                        "Seniors (50+)",
+                        "Youth (15-24)"
+                    ],
+                    "values": [
+                        82,
+                        99
+                    ]
+                }
+            },
+            "pop_up_fact": "<strong>Did you know?</strong> In 2010, only 38% of seniors (aged 50+) used the internet, compared to 90% of youth (15-24). By 2020, senior usage soared to 82%, showcasing the success of digital inclusion efforts.<br><cite style='display: block; text-align: right; margin-top: 5px; color: #D4AF37;'>Source: IMDA. (2011). Annual Survey on Infocomm Usage in Households and Individuals 2010</cite>"
+        }
+    },
+    {
+        "id": "social-media",
+        "year": "2010s",
+        "title": "The Social Media Boom",
+        "description": "This decade saw the explosive growth of social media, fundamentally changing communication and content creation. Singaporeans became avid adopters, forming vibrant online communities and driving new trends in digital commerce.",
+        "social_media_slider": {
+            "title": "Most Popular Apps by Year",
+            "pop_up_fact": "<strong>Did you know?</strong> By 2019, over 80% of Singaporeans were active social media users, significantly higher than the global average.<br><cite style='display: block; text-align: right; margin-top: 5px; color: #D4AF37;'>Source: Statista. (2020). Social media usage in Singapore</cite>",
+            "years": [
+                {
+                    "year": 2010,
+                    "apps": [
+                        "facebook.png",
+                        "youtube.png"
+                    ]
+                },
+                {
+                    "year": 2011,
+                    "apps": [
+                        "facebook.png",
+                        "youtube.png",
+                        "whatsapp.png"
+                    ]
+                },
+                {
+                    "year": 2012,
+                    "apps": [
+                        "facebook.png",
+                        "youtube.png",
+                        "whatsapp.png"
+                    ]
+                },
+                {
+                    "year": 2013,
+                    "apps": [
+                        "whatsapp.png",
+                        "facebook.png",
+                        "youtube.png",
+                        "instagram.png"
+                    ]
+                },
+                {
+                    "year": 2014,
+                    "apps": [
+                        "whatsapp.png",
+                        "facebook.png",
+                        "youtube.png",
+                        "instagram.png"
+                    ]
+                },
+                {
+                    "year": 2015,
+                    "apps": [
+                        "whatsapp.png",
+                        "facebook.png",
+                        "youtube.png",
+                        "instagram.png"
+                    ]
+                },
+                {
+                    "year": 2016,
+                    "apps": [
+                        "whatsapp.png",
+                        "facebook.png",
+                        "youtube.png",
+                        "instagram.png"
+                    ]
+                },
+                {
+                    "year": 2017,
+                    "apps": [
+                        "whatsapp.png",
+                        "youtube.png",
+                        "facebook.png",
+                        "instagram.png"
+                    ]
+                },
+                {
+                    "year": 2018,
+                    "apps": [
+                        "whatsapp.png",
+                        "youtube.png",
+                        "facebook.png",
+                        "instagram.png"
+                    ]
+                },
+                {
+                    "year": 2019,
+                    "apps": [
+                        "whatsapp.png",
+                        "youtube.png",
+                        "facebook.png",
+                        "instagram.png"
+                    ]
+                },
+                {
+                    "year": 2020,
+                    "apps": [
+                        "whatsapp.png",
+                        "youtube.png",
+                        "facebook.png",
+                        "tiktok.png"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "id": "2013",
+        "year": "2013-2016",
+        "title": "Nationwide 4G Rollout",
+        "description": "Singapore's three main telecom providers—Singtel, M1, and StarHub—completed the deployment of their 4G LTE networks across the island. By 2016, near-comprehensive coverage enabled seamless access to high-definition video streaming, cloud-based applications, and advanced e-services for the vast majority of the population.",
+        "interactive_map": {
+            "title": "4G Regional Performance (CLICK ON THE MAP)",
+            "regions": [
+                {
+                    "id": "north",
+                    "name": "North",
+                    "speed": "41.5 Mbps",
+                    "availability": "85.5%"
+                },
+                {
+                    "id": "northeast",
+                    "name": "Northeast",
+                    "speed": "49.6 Mbps",
+                    "availability": "87.1%"
+                },
+                {
+                    "id": "east",
+                    "name": "East",
+                    "speed": "49.5 Mbps",
+                    "availability": "87.2%"
+                },
+                {
+                    "id": "central",
+                    "name": "Central",
+                    "speed": "46.2 Mbps",
+                    "availability": "87.7%"
+                },
+                {
+                    "id": "west",
+                    "name": "West",
+                    "speed": "45.8 Mbps",
+                    "availability": "86.7%"
+                }
+            ]
+        }
+    },
+    {
+        "id": "2014",
+        "year": "2014",
+        "title": "The Birth of a Smart Nation",
+        "description": "Prime Minister Lee Hsien Loong unveiled the Smart Nation vision, a national strategy for leveraging digital technologies to enhance citizen life. Initial priorities involved upgrading Singpass, developing a unified e-payment system, and installing IoT sensor networks for smarter urban management.",
+        "image": "smartnation.png",
+        "styled_quote": {
+            "quote": "50 years ago, we built a modern city. Today, we have a metropolis. 10 years from now, let’s have a smart nation!",
+            "cite": "PM Lee Hsien Loong, Smart Nation launch speech, Nov 2014"
+        },
+        "expandable_video": {
+            "title": "The Smart Nation Vision",
+            "url": "https://www.youtube.com/embed/prfMjtR2hb0?start=60&end=130"
+        }
+    },
+    {
+        "id": "2015",
+        "year": "2015",
+        "title": "Establishment of Cyber Security Agency (CSA)",
+        "description": "To address the escalating threat of cyberattacks, the Cyber Security Agency (CSA) was established. Its mission is to manage national cybersecurity, defend critical infrastructure, and organize responses to digital threats."
+    }
+]

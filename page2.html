@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2010-2020: Digital Inclusion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="nav-container">
+        <div class="bg"></div>
+        <div class="button" tabindex="0">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <div id="nav-content" tabindex="0">
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#section-1">2000-2010</a></li>
+                <li><a href="page2.html">2010-2020</a></li>
+                <li><a href="page3.html">2020-2025+</a></li>
+                <li><a href="#" id="nav-quiz-btn">Take a Quiz</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="timeline-section">
+        <header class="section-header">
+            <h1>2010–2020: Democratisation of Connectivity</h1>
+        </header>
+        <main>
+            <div id="timeline-2">
+                <div id="timeline">
+                    </div>
+            </div>
+        </main>
+        <footer>
+            <a href="page3.html" class="nav-button">Next Page: 2020-2025+ →</a>
+        </footer>
+    </section>
+
+    <script id="event-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <div class="timeline-entry" id="{{id}}">
+        <div class="year-marker">{{year}}</div>
+        <div class="entry-card">
+            {{#if image}}
+            <img src="img/{{image}}" alt="{{title}}"/>
+            {{/if}}
+            <h1>{{title}}</h1>
+            <p>{{{description}}}</p>
+
+            {{!-- Styled Quote for Smart Nation --}}
+            {{#if styled_quote}}
+            <div class="styled-quote">
+                <blockquote>"{{styled_quote.quote}}"</blockquote>
+                <cite>— {{styled_quote.cite}}</cite>
+            </div>
+            {{/if}}
+
+            {{!-- Interactive Chart for Digital Divide --}}
+            {{#if digital_divide_chart}}
+            <div class="interactive-widget">
+                <h3>{{digital_divide_chart.title}}</h3>
+                <div class="chart-container">
+                    <canvas id="digital-divide-chart"></canvas>
+                </div>
+                <button id="chart-toggle-btn" class="widget-button" data-year="2020">View 2020 Stats</button>
+                <p class="widget-fact">{{{digital_divide_chart.pop_up_fact}}}</p>
+            </div>
+            {{/if}}
+
+            {{!-- Interactive Slider for Social Media --}}
+            {{#if social_media_slider}}
+            <div class="interactive-widget">
+                <h3>{{social_media_slider.title}}</h3>
+                <div class="slider-container">
+                    <div class="app-logos" id="app-logos-{{id}}"></div>
+                    <input type="range" min="2010" max="2020" value="2010" class="slider" id="app-slider-{{id}}" data-id="{{id}}">
+                    <div class="slider-labels">
+                        <span>2010</span>
+                        <span id="slider-year-{{id}}" class="slider-year">2010</span>
+                        <span>2020</span>
+                    </div>
+                </div>
+                <p class="widget-fact">{{{social_media_slider.pop_up_fact}}}</p>
+            </div>
+            {{/if}}
+
+           {{!-- Interactive Map for 4G Rollout --}}
+            {{#if interactive_map}}
+            <div class="interactive-widget">
+                <h3>{{interactive_map.title}}</h3>
+                <div class="map-container">
+                    <img src="img/4g-map-regions.png" alt="Map of 4G performance in Singapore" class="map-background">
+                    <div id="map-tooltip" style="display:none;"></div>
+                    
+                    <svg class="map-overlay" viewBox="0 0 746 496">
+                        <path class="region-path" data-region="West" data-speed="{{lookup (lookup interactive_map.regions 4) 'speed'}}" data-availability="{{lookup (lookup interactive_map.regions 4) 'availability'}}" d="M280.1,299.7v-83.4L232.3,186l-75.2-57.7H85.4L41,186l21.3,14.8V278l27.3,42.4L155,403h57.3L280.1,299.7z"/>
+                        <path class="region-path" data-region="North" data-speed="{{lookup (lookup interactive_map.regions 0) 'speed'}}" data-availability="{{lookup (lookup interactive_map.regions 0) 'availability'}}" d="M157.1,128.3L250.3,71h159.9l26.2,67.1-73.1,65-43.2-30.7L280,216.3l-47.7-30.3L157.1,128.3z"/>
+                        <path class="region-path" data-region="Central" data-speed="{{lookup (lookup interactive_map.regions 3) 'speed'}}" data-availability="{{lookup (lookup interactive_map.regions 3) 'availability'}}" d="M280,216.3v83.4L330.3,403l84-36.3L465.1,257l-28.8-25L363.2,203L280,216.3z"/>
+                        <path class="region-path" data-region="Northeast" data-speed="{{lookup (lookup interactive_map.regions 1) 'speed'}}" data-availability="{{lookup (lookup interactive_map.regions 1) 'availability'}}" d="M599.3,173.1l-44.2-35.1h-119l-73.1,65L363.2,203l73.1,29.1l104.2-7.1L599.3,173.1z"/>
+                        <path class="region-path" data-region="East" data-speed="{{lookup (lookup interactive_map.regions 2) 'speed'}}" data-availability="{{lookup (lookup interactive_map.regions 2) 'availability'}}" d="M436.3,232.1L540.5,225l90.8,22.9L669,271.2,578,350.1l-112.9-93L436.3,232.1z"/>
+                    </svg>
+                </div>
+            </div>
+            {{/if}}
+            
+            {{#if expandable_video}}
+            <button class="expand-button" aria-expanded="false" aria-controls="expand-{{id}}">
+                <svg class="icon icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <span class="label label-play">Watch Video</span>
+                <svg class="icon icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                <span class="label label-close">Close Video</span>
+            </button>
+            {{/if}}
+        </div>
+
+        {{#if expandable_video}}
+        <div class="expandable-content" id="expand-{{id}}" hidden>
+            <div class="entry-card expanded-card">
+                <h1>{{expandable_video.title}}</h1>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="{{expandable_video.url}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        {{/if}}
+    </div>
+    {{/each}}
+</script>
+
+    <div id="quiz-modal" class="quiz-modal-overlay">
+        <div class="quiz-container">
+            <button id="quiz-close-btn" class="quiz-close-btn" aria-label="Close Quiz">&times;</button>
+            
+            <div id="quiz-start-screen">
+                <h2>Test Your Knowledge</h2>
+                <p>Take this short quiz to see how much you've learned about Singapore's internet history.</p>
+                <button id="quiz-start-btn" class="quiz-button">Start Quiz</button>
+            </div>
+
+            <div id="quiz-content" hidden>
+                </div>
+        </div>
+    </div>
+
+    <script src="handlebars.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

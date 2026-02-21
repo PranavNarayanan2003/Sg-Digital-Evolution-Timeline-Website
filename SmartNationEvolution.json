@@ -1,0 +1,107 @@
+[
+    {
+        "id": "2020",
+        "year": "2020",
+        "title": "Launch of TraceTogether & SafeEntry",
+        "description": "As a measure to manage the COVID-19 pandemic, the Singapore government introduced TraceTogether, a national digital contact tracing system using Bluetooth. This system, along with the SafeEntry QR-code check-in, became a cornerstone of the public health strategy, demonstrating the power of the Smart Nation infrastructure while igniting public discourse on data privacy and trust.",
+        "image": "tracetogether logo.png",
+        "widget_fact": "<strong>Did you know?</strong> By early 2021, the TraceTogether app and token had achieved over 90% adoption among Singapore residents.<br><cite style='display: block; text-align: right; margin-top: 5px; color: #00ffff;'>Source: SNDGO, 2021</cite>",
+        "expandable_image": {
+            "src": "tracetogether-details.png",
+            "alt": "Details about TraceTogether app functionality and development",
+            "caption": "How TraceTogether works to stop the spread of COVID-19."
+        }
+    },
+    {
+        "id": "2021",
+        "year": "2021",
+        "title": "Government-wide IoT Infrastructure Expansion",
+        "description": "GovTech broadened its implementation of government-wide Internet of Things (IoT) infrastructure. These interconnected sensor networks, used for optimizing traffic, monitoring the environment, and ensuring public safety, create the essential data infrastructure for a genuinely intelligent and responsive city."
+    },
+    {
+        "id": "2022-5g",
+        "year": "2022",
+        "title": "Nationwide 5G Rollout Begins",
+        "description": "Singapore commenced its extensive rollout of 5G networks, offering capabilities like ultra-low latency and multi-gigabit speeds. This technology is set to power advancements ranging from autonomous vehicles and remote surgery to immersive entertainment experiences.",
+        "widget_fact": "<strong>Did you know?</strong> Singapore recently made headlines as the first market to launch nationwide 5G Standalone Access network slicing for enterprise customers, while many countries are still experimenting with non-Standalone 5G.<br><cite style='display: block; text-align: right; margin-top: 5px; color: #00ffff;'>Source: Opensignal, 2025</cite>",
+        "expandable_video": {
+            "title": "Why is 5G key?",
+            "url": "https://www.youtube.com/embed/l-orrW77XoY"
+        }
+    },
+    {
+        "id": "2022-dis",
+        "year": "2022",
+        "title": "Formation of the Digital and Intelligence Service (DIS)",
+        "description": "The Singapore Armed Forces created its fourth military branch, the Digital and Intelligence Service (DIS), tasked with defending the nation's digital sovereignty. This elite unit combines cyber defence, electronic warfare, and intelligence functions to protect Singapore from digital threats."
+    },
+    {
+        "id": "digital-threats",
+        "layout": "section-highlight",
+        "title": "Battling Digital Threats",
+        "description": "The rise in connectivity also brought an increase in digital risks. This section focuses on the growing challenges posed by cyber threats and online scams.",
+        "animated_chart_cyber": {
+            "title": "Rise in Reported Cybercrime Cases   (CLICK ON THE BAR CHART)",
+            "data": {
+                "labels": [
+                    "2020",
+                    "2021",
+                    "2022",
+                    "2023"
+                ],
+                "values": [
+                    16117,
+                    22219,
+                    33669,
+                    35700
+                ]
+            },
+            "summary": "In 2023, Singapore saw a 6% increase in cybercrime reports compared to 2022, with phishing and e-commerce scams being the most prevalent."
+        }
+    },
+    {
+        "id": "2024",
+        "year": "2024",
+        "title": "Smart Nation 2.0: The Next Chapter",
+        "description": "This refreshed strategy advances the Smart Nation vision by concentrating on three core pillars: Trust, Growth, and Community. Major components include a S$120 million fund to promote AI adoption in businesses, initiatives for digital inclusion, and platforms designed to foster greater citizen engagement.",
+        "widget_fact": "<strong>Did you know?</strong> Did you know? In the 2023 Smart City Index, Singapore was ranked 7th globally and 1st in Asia, outperforming cities like Seoul (8th) and Toronto (10th) due to its strong digital governance and citizen-centric services<br><cite style='display: block; text-align: right; margin-top: 5px; color: #00ffff;'>Source: IMD World Competitiveness Center & SUTD. (2023). Smart City Index 2023.</cite>",
+        "expandable_video": {
+            "title": "The future of Smart Nation 2.0",
+            "url": "https://www.youtube.com/embed/3KVb3pRy_3E"
+        }
+    },
+    {
+        "id": "2025",
+        "year": "2025 Target",
+        "title": "Towards Full Digital Resilience",
+        "description": "The timeline concludes with Singapore's ambitious objective: to establish complete nationwide 5G coverage, seamlessly incorporate AI into public services, and cultivate an inclusive digital society supported by strong cyber governance, thereby ensuring the nation remains future-ready."
+    },
+    {
+        "id": "ai-robotics",
+        "layout": "section-highlight",
+        "title": "AI & Robotics in Daily Life",
+        "description": "This section showcases the integration of AI and robotics from experimental stages into everyday applications, improving efficiency and convenience throughout the city.",
+        "media_carousel": {
+            "items": [
+                {
+                    "type": "image",
+                    "src": "robot-changi.png",
+                    "alt": "Autonomous cleaner at Changi Airport",
+                    "caption": "Changi Airport: Autonomous cleaning and baggage systems."
+                },
+                {
+                    "type": "image",
+                    "src": "robot-delivery.png",
+                    "alt": "Delivery robot in Punggol",
+                    "caption": "Punggol: Robot delivery services for food and parcels."
+                },
+                {
+                    "type": "image",
+                    "src": "AI_infrastructure.png",
+                    "alt": "AI Infrastructure",
+                    "caption": "Singapore is harnessing the power of AI to create national impact"
+                }
+            ]
+        }
+    }
+]

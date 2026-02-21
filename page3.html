@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020-2025+: Smart Nation Evolution</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="nav-container">
+        <div class="bg"></div>
+        <div class="button" tabindex="0">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <div id="nav-content" tabindex="0">
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#section-1">2000-2010</a></li>
+                <li><a href="page2.html">2010-2020</a></li>
+                <li><a href="page3.html">2020-2025+</a></li>
+                <li><a href="#" id="nav-quiz-btn">Take a Quiz</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="timeline-section">
+        <header class="section-header">
+            <h1>2020–2025+: Smart Nation Evolution</h1>
+        </header>
+        <main>
+            <div id="timeline-3">
+                <div id="timeline">
+                    </div>
+            </div>
+        </main>
+        <footer>
+            <button id="footer-quiz-btn" class="nav-button">Take the Quiz!</button>
+        </footer>
+    </section>
+
+    <script id="event-template" type="text/x-handlebars-template">
+    {{#each this}}
+        {{#if layout}}
+            {{!-- Renders the special, full-width highlight sections --}}
+            <div class="timeline-entry section-highlight" id="{{id}}">
+                <div class="entry-card section-highlight-card">
+                    <h1>{{title}}</h1>
+                    <p>{{{description}}}</p>
+
+                    {{!-- Media Carousel for AI & Robotics --}}
+                    {{#if media_carousel}}
+                    <div class="interactive-widget modern">
+                        <h3>{{media_carousel.title}}</h3>
+                        <div class="media-carousel" id="carousel-{{id}}">
+                            <div class="carousel-inner">
+                                {{#each media_carousel.items}}
+                                <div class="carousel-slide">
+                                    <img src="img/{{this.src}}" alt="{{this.alt}}"/>
+                                    <div class="carousel-caption">{{this.caption}}</div>
+                                </div>
+                                {{/each}}
+                            </div>
+                            <div class="carousel-dots"></div>
+                        </div>
+                    </div>
+                    {{/if}}
+
+                    {{!-- Animated Chart for Cyber Threats --}}
+                    {{#if animated_chart_cyber}}
+                    <div class="interactive-widget modern">
+                        <h3>{{animated_chart_cyber.title}}</h3>
+                        <div class="chart-container-cyber">
+                            <canvas id="cyber-chart"></canvas>
+                        </div>
+                        {{#if animated_chart_cyber.summary}}
+                        <p class="chart-summary">{{animated_chart_cyber.summary}}</p>
+                        {{/if}}
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+
+        {{else}}
+            {{!-- Renders a standard timeline entry --}}
+            <div class="timeline-entry" id="{{id}}">
+                <div class="year-marker">{{year}}</div>
+                <div class="entry-card">
+                    {{#if image}}
+                    <img src="img/{{image}}" alt="{{title}}"/>
+                    {{/if}}
+                    <h1>{{title}}</h1>
+                    <p>{{{description}}}</p>
+
+                    {{!-- Page-2-style widget fact --}}
+                    {{#if widget_fact}}
+                    <p class="widget-fact">
+                        {{{widget_fact}}}
+                    </p>
+                    {{/if}}
+
+                    {{!-- Expandable Image for TraceTogether --}}
+                    {{#if expandable_image}}
+                    <button class="view-more-button" data-target="#expandable-image-{{id}}">View More</button>
+                    <div id="expandable-image-{{id}}" class="expandable-image-container">
+                        <img src="img/{{expandable_image.src}}" alt="{{expandable_image.alt}}"/>
+                        {{#if expandable_image.caption}}
+                        <div class="image-caption">{{expandable_image.caption}}</div>
+                        {{/if}}
+                    </div>
+                    {{/if}}
+
+                    {{!-- Expandable Video Button --}}
+                    {{#if expandable_video}}
+                    <button class="expand-button" aria-expanded="false" aria-controls="expand-{{id}}">
+                        <svg class="icon icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        <span class="label label-play">Watch Video</span>
+                        <svg class="icon icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                        <span class="label label-close">Close Video</span>
+                    </button>
+                    {{/if}}
+                </div>
+
+                {{!-- Expandable Video Content --}}
+                {{#if expandable_video}}
+                <div class="expandable-content" id="expand-{{id}}" hidden>
+                    <div class="entry-card expanded-card">
+                        <h1>{{expandable_video.title}}</h1>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="{{expandable_video.url}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+            </div>
+        {{/if}}
+    {{/each}}
+</script>
+
+    <div id="quiz-modal" class="quiz-modal-overlay">
+        <div class="quiz-container">
+            <button id="quiz-close-btn" class="quiz-close-btn" aria-label="Close Quiz">&times;</button>
+            
+            <div id="quiz-start-screen">
+                <h2>Test Your Knowledge</h2>
+                <p>Take this short quiz to see how much you've learned about Singapore's internet history.</p>
+                <button id="quiz-start-btn" class="quiz-button">Start Quiz</button>
+            </div>
+
+            <div id="quiz-content" hidden>
+                </div>
+        </div>
+    </div>
+
+    <script src="handlebars.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
