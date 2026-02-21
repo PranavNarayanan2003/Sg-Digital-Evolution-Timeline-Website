@@ -2,6 +2,50 @@
 
 This project is an interactive timeline of Singapore's internet history, built with HTML, CSS, and vanilla JavaScript. The timeline data is served from a custom REST API built with Node.js and Express.
 
+An immersive, interactive web application documenting the milestones of Singapore's digital transformation—from the launch of Singapore ONE in 1997 to the current Smart Nation evolution.
+
+- Key Features
+
+Interactive 3D Hero: A high-performance landing experience powered by Three.js, featuring animated particle systems and spring-physics interactions.
+
+Dynamic Content Rendering: Uses Handlebars.js to inject data from JSON-based "Digital Foundations" and "Connectivity" datasets into the UI.
+
+Full-Stack Architecture: Features a dedicated Node.js/Express backend serving timeline data via a RESTful API.
+
+Data Visualization: Integrated Chart.js modules to visualize internet adoption rates and digital inclusion statistics across different eras.
+
+Knowledge Assessment: A custom-built, JSON-driven interactive quiz to test users on Singapore’s tech history.
+
+Responsive Multimedia: Support for embedded video documentaries and high-quality image galleries with smooth CSS transitions.
+
+- Tech Stack
+
+Frontend
+
+Three.js: 3D graphics and particle animations.
+
+Handlebars.js: Client-side templating for modular UI components.
+
+Tailwind CSS: Modern, utility-first styling for layout and responsiveness.
+
+Chart.js: Data visualization for digital inclusion metrics.
+
+Backend
+
+Node.js & Express.js: Server-side logic and API routing.
+
+REST API: Serves timeline data, quiz questions, and historical facts in JSON format.
+
+CORS: Configured for secure cross-origin resource sharing between frontend and backend.
+
+- Technical Highlights
+
+-RESTful Data Fetching: The frontend dynamically fetches timeline data (e.g., Laying the Digital Foundations.json) from the Express server, allowing for easy content updates without modifying HTML.
+
+-Intersection Observer API: Used to trigger 3D animations and CSS fade-ins only when elements are visible in the viewport, optimizing performance.
+
+-State Management: Tracks user progress through the quiz and current timeline "open" states using vanilla JavaScript.
+
 ---
 ## Prerequisites
 
